@@ -1,0 +1,22 @@
+{
+  "name": "rabbit-rewards-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Capacitor wrapper that packages the Rabbit Rewards frontend as an Android/iOS app",
+  "scripts": {
+    "copy-web": "node copy-web.js",
+    "add-android": "npx cap add android",
+    "add-ios": "npx cap add ios",
+    "sync": "npm run copy-web && npx cap sync",
+    "open-android": "npx cap open android",
+    "open-ios": "npx cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/ios": "^6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
+  }
+}
